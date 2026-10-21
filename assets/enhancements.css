@@ -745,6 +745,16 @@
   letter-spacing: .075em;
   text-transform: uppercase;
 }
+
+.cmt-acknowledgment {
+  margin-top: 64px;
+  padding: 30px;
+  border: 1px solid var(--ink);
+  border-left: 5px solid var(--orange);
+  background: rgb(255 255 255 / .45);
+}
+.prose .cmt-acknowledgment h3 { margin: 10px 0 16px; }
+.cmt-acknowledgment p { margin: 0; color: var(--ink); }
 .committee-section .committee-card.committee-card--primary .member-role {
   min-height: 0;
   margin: 0;

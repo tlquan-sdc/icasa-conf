@@ -108,13 +108,13 @@ def wrap(page, title, body, description):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js','is-loading');window.__ICASA_LOAD_START=performance.now();setTimeout(function(){{document.documentElement.classList.remove('is-loading')}},1000);</script>
-<link rel="stylesheet" href="assets/style.css?v={YEAR}-22">
-<link rel="stylesheet" href="assets/enhancements.css?v={YEAR}-22">
+<link rel="stylesheet" href="assets/style.css?v={YEAR}-26">
+<link rel="stylesheet" href="assets/enhancements.css?v={YEAR}-26">
 <style>
 .hero{{background-image:linear-gradient(90deg,rgb(244 241 232 / .82) 0%,rgb(244 241 232 / .68) 42%,rgb(244 241 232 / .38) 100%),linear-gradient(0deg,rgb(244 241 232 / .66) 0%,transparent 48%),url("{html.escape(HERO_IMAGE, quote=True)}")}}
 @media(max-width:580px){{.hero{{background-image:linear-gradient(90deg,rgb(244 241 232 / .92),rgb(244 241 232 / .67)),linear-gradient(0deg,rgb(244 241 232 / .82),transparent 48%),url("{html.escape(HERO_IMAGE, quote=True)}")}}}}
 </style>
-<script src="assets/site-data.js?v={YEAR}-22" defer></script><script src="assets/main.js?v={YEAR}-22" defer></script>
+<script src="assets/site-data.js?v={YEAR}-26" defer></script><script src="assets/main.js?v={YEAR}-26" defer></script>
 </head><body data-page="{page}">
 <div class="site-loader" role="status" aria-label="Loading {SITE_NAME}"><div class="loader-emblem" aria-hidden="true"><span class="loader-orbit"></span><span class="loader-logo"><img src="{LOGO_IMAGE}" alt="" width="512" height="512"></span></div><div class="loader-copy"><strong>{SITE_NAME}</strong><span>AI · Agriculture · ASEAN</span></div><span class="loader-progress" aria-hidden="true"><i></i></span></div>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -308,27 +308,39 @@ home = f'''
 
 
 committee_members = [
-    ("leadership", "General Chair", "Dr. Nguyen Ha Huy Cuong", "Software Development Centre (SDC), The University of Danang", "Viet Nam"),
+    ("leadership", "General Chair", "Dr. Nguyen Ha Huy Cuong", "Software Development Centre (SDC), The University of Danang", "VietNam"),
     ("leadership", "General Co-Chair", "Assoc. Prof. Phayung Meesad", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("leadership", "General Co-Chair", "Assoc. Prof. Dr. Vu Thi Phuong Anh", "Da Nang College", "Viet Nam"),
+    ("leadership", "General Co-Chair", "Thien Khai Tran, PhD", "Ho Chi Minh City University of Economics and Finance (UEF)", "VietNam"),
     ("advisory", "International Advisory Committee", "Czarina Ancella G. Gabi, PhD", "Southern Leyte State University", "Philippines"),
     ("advisory", "International Advisory Committee", "Assoc. Prof. Surapaneni Phani Praveen", "Prasad V. Potluri Siddhartha Institute of Technology", "India"),
-    ("advisory", "International Advisory Committee", "Thien Khai Tran, PhD", "Ho Chi Minh City University of Economics and Finance (UEF)", "Viet Nam"),
     ("advisory", "International Advisory Committee", "Prof. (Dr.) Akhilesh Kumar Sharma", "Manipal University Jaipur", "India"),
     ("program", "Technical Program Chair", "Sakchai Tangwanwit, PhD", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("program", "Technical Program Co-Chair", "Nguyen Si Thin", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "Viet Nam"),
+    ("program", "Technical Program Co-Chair", "Nguyen Si Thin", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
     ("program", "Technical Program Co-Chair", "Reynold G. Bustillo", "Biliran Province State University (BiPSU)", "Philippines"),
+    ("program", "Technical Program Committee", "Assoc. Prof. Dr. Vu Thi Phuong Anh", "Da Nang College", "VietNam"),
     ("program", "Technical Program Committee", "Reymon M. Santiañez", "Biliran Province State University (BiPSU)", "Philippines"),
     ("program", "Technical Program Committee", "Monalee A. dela Cerna", "Surigao del Norte State University", "Philippines"),
-    ("program", "Technical Program Committee", "Tran Van Dai", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "Viet Nam"),
-    ("program", "Technical Program Committee", "Ngoc Anh Thi Nguyen, PhD", "The University of Danang – University of Science and Education", "Viet Nam"),
+    ("program", "Technical Program Committee", "Tran Van Dai", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Program Committee", "Ho Van Hung", "The University of DaNang – Center for Information Technology and Digital Learning Resources", "VietNam"),
+    ("program", "Technical Program Committee", "Hoang Manh Ha", "Institute of Digital Technology, Thu Dau Mot University", "VietNam"),
     ("program", "Technical Program Committee", "Adel Grace Prima Gaudicos, PhD", "Southern Leyte State University", "Philippines"),
+    ("program", "Technical Program Committee", "Prof. Dr. Tzung-Pei Hong", "National University of Kaohsiung", "Taiwan"),
+    ("program", "Technical Program Committee", "Prof. Dr. David Camacho", "Universidad Autónoma de Madrid", "Spain"),
+    ("program", "Technical Program Committee", "Prof. Dr. Nitesh Chawla", "University of Notre Dame", "USA"),
+    ("program", "Technical Program Committee", "Prof. Dr. Kang-Hyun Jo", "University of Ulsan", "South Korea"),
+    ("program", "Technical Program Committee", "Prof. Dr. Lipo Wang", "Nanyang Technological University", "Singapore"),
+    ("program", "Technical Program Committee", "Prof. Dr. Chia Nan Wang", "National Kaohsiung University of Science and Technology", "Taiwan"),
+    ("program", "Technical Program Committee", "Prof. Dr. Gwanggil Jeon", "Incheon National University", "Korea"),
+    ("program", "Technical Program Committee", "Prof. Dr. Herwig Unger", "University of Hagen", "Germany"),
+    ("program", "Technical Program Committee", "Ian Celmar Alicaya Avila", "Western Leyte College of Ormoc", "Philippines"),
     ("publication", "Publication Chair", "Jannie Fleur V. Oraño, DIT", "Southern Leyte State University", "Philippines"),
     ("publication", "Publicity & International Relations Chair", "Ingrid Uy", "Southern Leyte State University", "Philippines"),
     ("publication", "International Liaison Co-Chair", "Sonny Soriano", "Urdaneta City University", "Philippines"),
-    ("organizing", "Local Organizing Chair", "Ho Phan Hieu", "The University of Danang", "Viet Nam"),
-    ("organizing", "Local Organizing Co-Chair", "Tran Thi Phu", "The University of Danang", "Viet Nam"),
-    ("organizing", "Conference Secretariat / Registration Coordinator", "Cao Xuan Tuan", "The University of Danang", "Viet Nam"),
+    ("publication", "Publicity Committee", "Ho Phan Hieu", "The University of Danang", "VietNam"),
+    ("publication", "Publicity Committee", "Tran Thi Phu", "The University of Danang", "VietNam"),
+    ("publication", "Publicity Committee", "Cao Xuan Tuan", "The University of Danang", "VietNam"),
+    ("organizing", "Local Organizing Committee", "Tran Nu Nhu Quynh", "Software Development Centre (SDC), The University of Danang", "VietNam"),
+    ("organizing", "Local Organizing Committee", "Truong Luu Quan", "Software Development Centre (SDC), The University of Danang", "VietNam"),
 ]
 committee_category_labels = {
     "leadership": "Leadership",
@@ -367,7 +379,7 @@ for category, group_title in committee_groups:
 
 committee = page_head("Conference Committee", "Leadership, advisory, technical programme and organising committee members for ICASA 2027.", "Committee") + f'''<section class="content committee-section"><div class="container"><div class="section-heading split"><div><span class="section-label">Leadership and programme</span><h2>Conference organisation</h2></div><span class="status" data-committee-count aria-live="polite">{len(committee_members)} committee members</span></div><div class="filters" role="group" aria-label="Filter committee groups" data-filter-group><button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter" data-filter="leadership" aria-pressed="false">Leadership</button><button type="button" class="filter" data-filter="advisory" aria-pressed="false">International advisory</button><button type="button" class="filter" data-filter="program" aria-pressed="false">Technical programme</button><button type="button" class="filter" data-filter="publication" aria-pressed="false">Publication & relations</button><button type="button" class="filter" data-filter="organizing" aria-pressed="false">Local organisation</button></div><div class="committee-directory" data-committee-directory>{committee_groups_html}</div><div class="callout"><p><strong>Committee information.</strong> Names, roles and institutional affiliations are presented as supplied by the conference organiser.</p></div></div></section>'''
 
-cfp = page_head("Call for Papers", "Research scope for responsible applications of AI in smart and sustainable agriculture across ASEAN.", "Call for Papers") + '<section class="content">' + inner(f'''<span class="section-label">Conference scope</span><h2>Invitation to contribute</h2><p>The full-paper submission deadline is <strong>{CONFERENCE['submission_deadline']}</strong>. Review policies and proceedings information are maintained on this website.</p><div class="callout"><p><strong>Proceedings publication.</strong> The {SITE_NAME} proceedings will be published in <a href="{PUBLICATION['series_url']}" target="_blank" rel="noopener noreferrer">{PUBLICATION['series_name']} ({PUBLICATION['series_short']})</a> by {PUBLICATION['publisher']}. <strong>The {PUBLICATION['series_short']} book series is indexed in Scopus.</strong> Publication and subsequent indexing of an individual paper remain subject to peer review, author registration, presentation, publisher requirements and the policies of the indexing service.</p></div><h3>Conference tracks</h3><p>ICASA welcomes original research and applied work across the following interdisciplinary areas:</p><ol class="numbered-topics">{cfp_track_items()}</ol>{submission_guidelines()}<h3>Templates and author resources</h3>{submission_resources()}<h3>Submission through Microsoft CMT</h3><p>Authors create or use a Microsoft CMT account, enter the paper metadata and author list, select suitable topics, upload the manuscript and retain the paper ID for later revisions.</p><div class="submission-card"><div><span class="section-label">Submission platform</span><h3>{SITE_NAME} on Microsoft CMT</h3><p>Use only the Microsoft CMT URL published on this website.</p></div>{cmt_cta()}</div>''') + '</section>'
+cfp = page_head("Call for Papers", "Research scope for responsible applications of AI in smart and sustainable agriculture across ASEAN.", "Call for Papers") + '<section class="content">' + inner(f'''<span class="section-label">Conference scope</span><h2>Invitation to contribute</h2><p>The full-paper submission deadline is <strong>{CONFERENCE['submission_deadline']}</strong>. Review policies and proceedings information are maintained on this website.</p><div class="callout"><p><strong>Proceedings publication.</strong> The {SITE_NAME} proceedings will be published in <a href="{PUBLICATION['series_url']}" target="_blank" rel="noopener noreferrer">{PUBLICATION['series_name']} ({PUBLICATION['series_short']})</a> by {PUBLICATION['publisher']}. <strong>The {PUBLICATION['series_short']} book series is indexed in Scopus.</strong> Publication and subsequent indexing of an individual paper remain subject to peer review, author registration, presentation, publisher requirements and the policies of the indexing service.</p></div><h3>Conference tracks</h3><p>ICASA welcomes original research and applied work across the following interdisciplinary areas:</p><ol class="numbered-topics">{cfp_track_items()}</ol>{submission_guidelines()}<h3>Templates and author resources</h3>{submission_resources()}<h3>Submission through Microsoft CMT</h3><p>Authors create or use a Microsoft CMT account, enter the paper metadata and author list, select suitable topics, upload the manuscript and retain the paper ID for later revisions.</p><div class="submission-card"><div><span class="section-label">Submission platform</span><h3>{SITE_NAME} on Microsoft CMT</h3><p>Use only the Microsoft CMT URL published on this website.</p></div>{cmt_cta()}</div><section class="cmt-acknowledgment" aria-labelledby="cmt-acknowledgment-heading"><span class="section-label">Required public statement</span><h3 id="cmt-acknowledgment-heading">CMT Acknowledgment</h3><p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p></section>''') + '</section>'
 
 keynotes = page_head("Keynote Speakers", "The keynote programme is being prepared for the current conference edition.", "Keynotes") + '''<section class="content"><div class="container narrow"><div class="empty-state coming-soon-state" data-reveal><span class="section-label">Keynote programme</span><span class="coming-soon-code" aria-hidden="true">Programme update · 2027</span><h2>Coming soon</h2><p>Keynote speakers, affiliations, presentation topics and session times will be published after formal confirmation.</p><a class="text-link" href="call-for-papers.html">Explore the research scope <span>→</span></a></div></div></section>'''
 
