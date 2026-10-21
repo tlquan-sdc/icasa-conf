@@ -108,13 +108,13 @@ def wrap(page, title, body, description):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js','is-loading');window.__ICASA_LOAD_START=performance.now();setTimeout(function(){{document.documentElement.classList.remove('is-loading')}},1000);</script>
-<link rel="stylesheet" href="assets/style.css?v={YEAR}-26">
-<link rel="stylesheet" href="assets/enhancements.css?v={YEAR}-26">
+<link rel="stylesheet" href="assets/style.css?v={YEAR}-27">
+<link rel="stylesheet" href="assets/enhancements.css?v={YEAR}-27">
 <style>
 .hero{{background-image:linear-gradient(90deg,rgb(244 241 232 / .82) 0%,rgb(244 241 232 / .68) 42%,rgb(244 241 232 / .38) 100%),linear-gradient(0deg,rgb(244 241 232 / .66) 0%,transparent 48%),url("{html.escape(HERO_IMAGE, quote=True)}")}}
 @media(max-width:580px){{.hero{{background-image:linear-gradient(90deg,rgb(244 241 232 / .92),rgb(244 241 232 / .67)),linear-gradient(0deg,rgb(244 241 232 / .82),transparent 48%),url("{html.escape(HERO_IMAGE, quote=True)}")}}}}
 </style>
-<script src="assets/site-data.js?v={YEAR}-26" defer></script><script src="assets/main.js?v={YEAR}-26" defer></script>
+<script src="assets/site-data.js?v={YEAR}-27" defer></script><script src="assets/main.js?v={YEAR}-27" defer></script>
 </head><body data-page="{page}">
 <div class="site-loader" role="status" aria-label="Loading {SITE_NAME}"><div class="loader-emblem" aria-hidden="true"><span class="loader-orbit"></span><span class="loader-logo"><img src="{LOGO_IMAGE}" alt="" width="512" height="512"></span></div><div class="loader-copy"><strong>{SITE_NAME}</strong><span>AI · Agriculture · ASEAN</span></div><span class="loader-progress" aria-hidden="true"><i></i></span></div>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -310,35 +310,35 @@ home = f'''
 committee_members = [
     ("leadership", "General Chair", "Dr. Nguyen Ha Huy Cuong", "Software Development Centre (SDC), The University of Danang", "VietNam"),
     ("leadership", "General Co-Chair", "Assoc. Prof. Phayung Meesad", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("leadership", "General Co-Chair", "Thien Khai Tran, PhD", "Ho Chi Minh City University of Economics and Finance (UEF)", "VietNam"),
+    ("leadership", "General Co-Chair", "Prof. (Dr.) Akhilesh Kumar Sharma", "Manipal University Jaipur", "INDIA"),
+    ("leadership", "General Co-Chair", "Cao Xuan Tuan", "The University of Danang", "VietNam"),
     ("advisory", "International Advisory Committee", "Czarina Ancella G. Gabi, PhD", "Southern Leyte State University", "Philippines"),
     ("advisory", "International Advisory Committee", "Assoc. Prof. Surapaneni Phani Praveen", "Prasad V. Potluri Siddhartha Institute of Technology", "India"),
-    ("advisory", "International Advisory Committee", "Prof. (Dr.) Akhilesh Kumar Sharma", "Manipal University Jaipur", "India"),
-    ("program", "Technical Program Chair", "Sakchai Tangwanwit, PhD", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("program", "Technical Program Co-Chair", "Nguyen Si Thin", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
-    ("program", "Technical Program Co-Chair", "Reynold G. Bustillo", "Biliran Province State University (BiPSU)", "Philippines"),
-    ("program", "Technical Program Committee", "Assoc. Prof. Dr. Vu Thi Phuong Anh", "Da Nang College", "VietNam"),
-    ("program", "Technical Program Committee", "Reymon M. Santiañez", "Biliran Province State University (BiPSU)", "Philippines"),
-    ("program", "Technical Program Committee", "Monalee A. dela Cerna", "Surigao del Norte State University", "Philippines"),
-    ("program", "Technical Program Committee", "Tran Van Dai", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
-    ("program", "Technical Program Committee", "Ho Van Hung", "The University of DaNang – Center for Information Technology and Digital Learning Resources", "VietNam"),
-    ("program", "Technical Program Committee", "Hoang Manh Ha", "Institute of Digital Technology, Thu Dau Mot University", "VietNam"),
-    ("program", "Technical Program Committee", "Adel Grace Prima Gaudicos, PhD", "Southern Leyte State University", "Philippines"),
-    ("program", "Technical Program Committee", "Prof. Dr. Tzung-Pei Hong", "National University of Kaohsiung", "Taiwan"),
-    ("program", "Technical Program Committee", "Prof. Dr. David Camacho", "Universidad Autónoma de Madrid", "Spain"),
-    ("program", "Technical Program Committee", "Prof. Dr. Nitesh Chawla", "University of Notre Dame", "USA"),
-    ("program", "Technical Program Committee", "Prof. Dr. Kang-Hyun Jo", "University of Ulsan", "South Korea"),
-    ("program", "Technical Program Committee", "Prof. Dr. Lipo Wang", "Nanyang Technological University", "Singapore"),
-    ("program", "Technical Program Committee", "Prof. Dr. Chia Nan Wang", "National Kaohsiung University of Science and Technology", "Taiwan"),
-    ("program", "Technical Program Committee", "Prof. Dr. Gwanggil Jeon", "Incheon National University", "Korea"),
-    ("program", "Technical Program Committee", "Prof. Dr. Herwig Unger", "University of Hagen", "Germany"),
-    ("program", "Technical Program Committee", "Ian Celmar Alicaya Avila", "Western Leyte College of Ormoc", "Philippines"),
+    ("program", "Technical Programme Chair", "PhD. Sakchai Tangwanwit", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
+    ("program", "Technical Programme Co-Chair", "PhD. Nguyen Si Thin", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Programme Co-Chair", "PhD. Reynold G. Bustillo", "Biliran Province State University (BiPSU)", "Philippines"),
+    ("program", "Technical Programme Committee", "PhD. Vu Thi Phuong Anh", "Da Nang College", "VietNam"),
+    ("program", "Technical Programme Committee", "PhD. Reymon M. Santiañez", "Biliran Province State University (BiPSU)", "Philippines"),
+    ("program", "Technical Programme Committee", "PhD. Monalee A. dela Cerna", "Surigao del Norte State University", "Philippines"),
+    ("program", "Technical Programme Committee", "PhD. Tran Van Dai", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Programme Committee", "PhD. Ho Van Hung", "The University of DaNang – Center for Information Technology and Digital Learning Resources", "VietNam"),
+    ("program", "Technical Programme Committee", "PhD. Hoang Manh Ha", "Institute of Digital Technology, Thu Dau Mot University", "VietNam"),
+    ("program", "Technical Programme Committee", "PhD. Adel Grace Prima Gaudicos", "Southern Leyte State University", "Philippines"),
+    ("program", "Technical Programme Committee", "PhD. Tzung-Pei Hong", "National University of Kaohsiung", "Taiwan"),
+    ("program", "Technical Programme Committee", "PhD. David Camacho", "Universidad Autónoma de Madrid", "Spain"),
+    ("program", "Technical Programme Committee", "PhD. Nitesh Chawla", "University of Notre Dame", "USA"),
+    ("program", "Technical Programme Committee", "PhD. Kang-Hyun Jo", "University of Ulsan", "South Korea"),
+    ("program", "Technical Programme Committee", "PhD. Lipo Wang", "Nanyang Technological University", "Singapore"),
+    ("program", "Technical Programme Committee", "PhD. Chia Nan Wang", "National Kaohsiung University of Science and Technology", "Taiwan"),
+    ("program", "Technical Programme Committee", "PhD. Gwanggil Jeon", "Incheon National University", "Korea"),
+    ("program", "Technical Programme Committee", "PhD. Herwig Unger", "University of Hagen", "Germany"),
+    ("program", "Technical Programme Committee", "PhD. Ian Celmar Alicaya Avila", "Western Leyte College of Ormoc", "Philippines"),
     ("publication", "Publication Chair", "Jannie Fleur V. Oraño, DIT", "Southern Leyte State University", "Philippines"),
     ("publication", "Publicity & International Relations Chair", "Ingrid Uy", "Southern Leyte State University", "Philippines"),
     ("publication", "International Liaison Co-Chair", "Sonny Soriano", "Urdaneta City University", "Philippines"),
     ("publication", "Publicity Committee", "Ho Phan Hieu", "The University of Danang", "VietNam"),
     ("publication", "Publicity Committee", "Tran Thi Phu", "The University of Danang", "VietNam"),
-    ("publication", "Publicity Committee", "Cao Xuan Tuan", "The University of Danang", "VietNam"),
+    ("publication", "Publication & International Relations Committee", "Thien Khai Tran, PhD", "Ho Chi Minh City University of Economics and Finance (UEF)", "VietNam"),
     ("organizing", "Local Organizing Committee", "Tran Nu Nhu Quynh", "Software Development Centre (SDC), The University of Danang", "VietNam"),
     ("organizing", "Local Organizing Committee", "Truong Luu Quan", "Software Development Centre (SDC), The University of Danang", "VietNam"),
 ]
