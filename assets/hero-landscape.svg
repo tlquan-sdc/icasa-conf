@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="title desc">
+<title id="title">Intelligent agriculture in Southeast Asia</title>
+<desc id="desc">Stylized terraced fields, connected sensors, drone and digital network, representing AI-enabled agriculture.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c3e8d8"/><stop offset="1" stop-color="#f8f5e7"/></linearGradient>
+  <linearGradient id="earth" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#367d60"/><stop offset="1" stop-color="#0c4739"/></linearGradient>
+  <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8dc6f"/><stop offset="1" stop-color="#559e5c"/></linearGradient>
+  <clipPath id="rounded"><rect width="760" height="600" rx="30"/></clipPath>
+  <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#063d2b" flood-opacity=".16"/></filter>
+</defs>
+<g clip-path="url(#rounded)">
+<rect width="760" height="600" fill="url(#sky)"/>
+<circle cx="592" cy="133" r="68" fill="#f9e5a4" opacity=".94"/>
+<g fill="#ffffff" opacity=".7"><ellipse cx="130" cy="112" rx="100" ry="20"/><ellipse cx="455" cy="75" rx="66" ry="13"/></g>
+<path d="M0 340 Q160 252 307 320 T760 298 V600 H0" fill="#a4caae"/>
+<path d="M0 400 Q150 295 318 380 T760 345 V600 H0" fill="#76b39a"/>
+<path d="M0 455 Q230 322 440 430 T760 380 V600 H0" fill="url(#earth)"/>
+<path d="M-20 534 C190 392 361 474 502 422 S710 405 790 402" fill="none" stroke="#97d887" stroke-width="44" stroke-linecap="round"/>
+<path d="M-20 598 C153 475 346 537 522 475 S710 463 790 462" fill="none" stroke="#a1d46c" stroke-width="49" stroke-linecap="round"/>
+<path d="M-20 667 C143 546 326 595 518 549 S702 527 790 521" fill="none" stroke="#c7dc7d" stroke-width="48" stroke-linecap="round"/>
+<g fill="none" stroke="#e9f4d7" stroke-width="2" opacity=".75"><path d="M0 520 C183 398 366 487 502 430 S710 417 760 413"/><path d="M0 582 C179 460 362 554 516 488 S718 480 760 472"/></g>
+<g stroke="#ecfff1" stroke-width="2" stroke-dasharray="6 7" fill="none" opacity=".8"><path d="M157 391 L289 312 L439 376 L565 300"/><path d="M289 312 L355 207 L527 224"/></g>
+<g fill="#ecfff1" stroke="#278564" stroke-width="3"><circle cx="157" cy="391" r="8"/><circle cx="289" cy="312" r="8"/><circle cx="439" cy="376" r="8"/><circle cx="565" cy="300" r="8"/><circle cx="355" cy="207" r="8"/><circle cx="527" cy="224" r="8"/></g>
+<g transform="translate(366 133)" stroke="#174c3f" stroke-width="6" stroke-linecap="round" fill="none">
+<path d="M-66 0 L-19 -22 M66 0 L19 -22 M-66 0 L-19 20 M66 0 L19 20"/><rect x="-23" y="-24" width="46" height="48" rx="15" fill="#174c3f"/><rect x="-11" y="-17" width="22" height="22" rx="6" fill="#d6f0bb" stroke="none"/><g stroke="#174c3f" stroke-width="5"><circle cx="-73" cy="-5" r="19"/><circle cx="73" cy="-5" r="19"/><circle cx="-73" cy="24" r="17"/><circle cx="73" cy="24" r="17"/></g>
+</g>
+<g transform="translate(118 237)" filter="url(#shadow)"><rect width="188" height="82" rx="18" fill="white"/><rect x="16" y="16" width="48" height="48" rx="12" fill="#e5f7e7"/><path d="M40 53 V28 M28 41 h24 M33 48 l14 -14" fill="none" stroke="#3b9873" stroke-width="3"/><text x="80" y="34" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#174c3f">AI Crop Insights</text><text x="80" y="56" font-family="Arial,sans-serif" font-size="10" fill="#678078">Connected field data</text></g>
+<g transform="translate(530 355)" filter="url(#shadow)"><rect width="166" height="70" rx="16" fill="white"/><circle cx="30" cy="35" r="18" fill="#e9f8e5"/><path d="m23 35 5 5 10 -11" fill="none" stroke="#4c9c64" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="56" y="30" font-family="Arial,sans-serif" font-weight="bold" font-size="12" fill="#174c3f">Smart Farming</text><text x="56" y="48" font-family="Arial,sans-serif" font-size="10" fill="#678078">ASEAN 2027</text></g>
+</g>
+</svg>
