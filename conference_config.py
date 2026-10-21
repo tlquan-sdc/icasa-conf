@@ -130,8 +130,8 @@ CONFERENCE = {
     "partner_logos": [
         {"src": "assets/udn-logo.webp", "width": 640, "height": 640},
         {"src": "assets/sdc-logo.jpg", "width": 500, "height": 500},
-        {"src": "assets/eai-logo.png", "width": 1920, "height": 1080},
-        {"src": "assets/springer-logo.webp", "width": 2400, "height": 663},
+        {"src": "assets/cropped-SLSU_Logo-1.png", "width": 300, "height": 300},
+        {"src": "assets/BiPSU.jpg", "width": 564, "height": 543},
     ],
     "last_updated": "20 Oct 2026",
     "registration_fees": {

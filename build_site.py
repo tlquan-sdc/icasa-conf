@@ -297,50 +297,56 @@ home = f'''
 <section class="section themes"><div class="container"><div class="section-heading" data-reveal><span class="section-label">Conference scope</span><h2>Research themes</h2><p>Featured areas from a broader interdisciplinary programme spanning AI, agricultural engineering, life sciences and regional innovation.</p></div><ol class="theme-list">{home_track_items()}</ol><a class="text-link" href="call-for-papers.html">Explore all {len(TRACKS)} conference tracks <span>→</span></a></div></section>
 <section class="section deadlines"><div class="container deadline-grid"><div data-reveal><span class="section-label">Conference timeline</span><h2>Key milestones</h2><p>Submission, notification, registration and conference dates are maintained on the Important Dates page.</p><a class="text-link light" href="important-dates.html">Full timeline <span>→</span></a></div><div class="deadline-list" data-deadlines data-limit="4"><noscript>Enable JavaScript to view the conference timeline.</noscript></div></div></section>
 {gallery_section()}
-<section class="identity-section" id="institutional-network"><div class="container"><div class="identity-heading" data-reveal><div><span class="section-label">Institutional network</span><h2>Host, organiser<br>and publication route.</h2></div><p>Official institutional and publication information for the current conference edition.</p></div><div class="identity-grid">
+<section class="identity-section" id="institutional-network"><div class="container"><div class="identity-heading" data-reveal><div><span class="section-label">Institutional network</span><h2>Host, organiser<br>and partner universities.</h2></div><p>Official institutional and partner information for the current conference edition.</p></div><div class="identity-grid">
   <a class="identity-card" href="https://www.udn.vn/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Host university</span><span class="identity-logo udn"><img src="assets/udn-logo.webp" alt="The University of Danang logo" width="640" height="640"></span><strong>The University of Danang</strong><small>Institutional identity</small></a>
   <a class="identity-card" href="https://sdc.udn.vn/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Organising unit</span><span class="identity-logo sdc"><img src="assets/sdc-logo.jpg" alt="Software Development Centre logo" width="500" height="500"></span><strong>Software Development Centre</strong><small>SDC · The University of Danang</small></a>
-  <a class="identity-card" href="https://eai.eu/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Conference network</span><span class="identity-logo eai"><img src="assets/eai-logo.png" alt="European Alliance for Innovation logo" width="1920" height="1080"></span><strong>EAI</strong><small>Conference information</small></a>
-  <a class="identity-card" href="{PUBLICATION['series_url']}" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Proceedings series</span><span class="identity-logo springer"><img src="assets/springer-logo.webp" alt="Springer Nature logo" width="2400" height="663"></span><strong>{PUBLICATION['series_short']}</strong><small>{PUBLICATION['publisher']} · Scopus-indexed book series</small></a>
+  <a class="identity-card" href="https://www.slsu.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner university</span><span class="identity-logo slsu"><img src="assets/cropped-SLSU_Logo-1.png" alt="Southern Luzon State University logo" width="300" height="300"></span><strong>Southern Luzon State University</strong><small>SLSU · Philippines</small></a>
+  <a class="identity-card" href="https://bipsu.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner university</span><span class="identity-logo bipsu"><img src="assets/BiPSU.jpg" alt="Biliran Province State University logo" width="564" height="543"></span><strong>Biliran Province State University</strong><small>BiPSU · Philippines</small></a>
 </div></div></section>
 <section class="sponsors-section" data-sponsors-section hidden><div class="container"><div class="sponsors-heading"><div><span class="section-label">Conference support</span><h2>Sponsors</h2></div><p>Confirmed sponsors and supporters will appear here after agreement and logo-use approval.</p></div><div class="sponsor-rail" data-sponsors></div></div></section>
 <section class="host-band"><div class="container host-grid" data-reveal><div><span class="section-label">Host city</span><strong>{CONFERENCE['city'].upper()}</strong></div><p>{CONFERENCE['region']}<br>{CONFERENCE['latitude']}° N · {CONFERENCE['longitude']}° E</p><div><span class="section-label">Organiser</span><p>{ORGANIZER}</p></div><a class="btn inverse" href="venue.html">Venue information <span>→</span></a></div></section>'''
 
 
 committee_members = [
-    ("leadership", "General Chair", "Dr. Nguyen Ha Huy Cuong", "Software Development Centre (SDC), The University of Danang", "VietNam"),
-    ("leadership", "General Co-Chair", "Assoc. Prof. Phayung Meesad", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("leadership", "General Co-Chair", "Prof. (Dr.) Akhilesh Kumar Sharma", "Manipal University Jaipur", "INDIA"),
-    ("leadership", "General Co-Chair", "Cao Xuan Tuan", "The University of Danang", "VietNam"),
-    ("advisory", "International Advisory Committee", "Czarina Ancella G. Gabi, PhD", "Southern Leyte State University", "Philippines"),
-    ("advisory", "International Advisory Committee", "Assoc. Prof. Surapaneni Phani Praveen", "Prasad V. Potluri Siddhartha Institute of Technology", "India"),
-    ("program", "Technical Programme Chair", "Sakchai Tangwanwit, PhD", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
-    ("program", "Technical Programme Co-Chair", "PhD. Nguyen Si Thin", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
-    ("program", "Technical Programme Co-Chair", "PhD. Reynold G. Bustillo", "Biliran Province State University (BiPSU)", "Philippines"),
-    ("program", "Technical Programme Committee", "Assoc. Prof. Dr. Vu Thi Phuong Anh", "Da Nang College", "VietNam"),
-    ("program", "Technical Programme Committee", "PhD. Reymon M. Santiañez", "Biliran Province State University (BiPSU)", "Philippines"),
-    ("program", "Technical Programme Committee", "PhD. Monalee A. dela Cerna", "Surigao del Norte State University", "Philippines"),
-    ("program", "Technical Programme Committee", "PhD. Tran Van Dai", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
-    ("program", "Technical Programme Committee", "PhD. Ho Van Hung", "The University of DaNang – Center for Information Technology and Digital Learning Resources", "VietNam"),
-    ("program", "Technical Programme Committee", "PhD. Hoang Manh Ha", "Institute of Digital Technology, Thu Dau Mot University", "VietNam"),
-    ("program", "Technical Programme Committee", "Adel Grace Prima Gaudicos, PhD", "Southern Leyte State University", "Philippines"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Tzung-Pei Hong", "National University of Kaohsiung", "Taiwan"),
-    ("program", "Technical Programme Committee", "Prof. Dr. David Camacho", "Universidad Autónoma de Madrid", "Spain"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Nitesh Chawla", "University of Notre Dame", "USA"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Kang-Hyun Jo", "University of Ulsan", "South Korea"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Lipo Wang", "Nanyang Technological University", "Singapore"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Chia Nan Wang", "National Kaohsiung University of Science and Technology", "Taiwan"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Gwanggil Jeon", "Incheon National University", "Korea"),
-    ("program", "Technical Programme Committee", "Prof. Dr. Herwig Unger", "University of Hagen", "Germany"),
-    ("program", "Technical Programme Committee", "PhD. Ian Celmar Alicaya Avila", "Western Leyte College of Ormoc", "Philippines"),
+    ("leadership", "General Chair", "Nguyen Ha Huy Cuong, Ph.D.", "Software Development Centre (SDC), The University of Danang", "VietNam"),
+    ("leadership", "General Co-Chair", "Phayung Meesad, Assoc. Prof.", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
+    ("leadership", "General Co-Chair", "Akhilesh Kumar Sharma, Prof. (Dr.)", "Manipal University Jaipur", "INDIA"),
+    ("leadership", "General Co-Chair", "Cao Xuan Tuan, Ph.D.", "The University of Danang", "VietNam"),
+    ("advisory", "International Advisory Committee", "Czarina Ancella G. Gabi, Ph.D.", "Southern Leyte State University", "Philippines"),
+    ("advisory", "International Advisory Committee", "Surapaneni Phani Praveen, Assoc. Prof.", "Prasad V. Potluri Siddhartha Institute of Technology", "India"),
+    ("program", "Technical Programme Chair", "Sakchai Tangwanwit, Ph.D.", "King Mongkut's University of Technology North Bangkok (KMUTNB)", "Thailand"),
+    ("program", "Technical Programme Co-Chair", "Nguyen Si Thin, Ph.D.", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Programme Co-Chair", "Reynold G. Bustillo, Ph.D.", "Biliran Province State University (BiPSU)", "Philippines"),
+    ("program", "Technical Programme Committee", "Vu Thi Phuong Anh, Assoc. Prof. Dr.", "Da Nang College", "VietNam"),
+    ("program", "Technical Programme Committee", "Reymon M. Santiañez, Ph.D.", "Biliran Province State University (BiPSU)", "Philippines"),
+    ("program", "Technical Programme Committee", "Monalee A. dela Cerna, Ph.D.", "Surigao del Norte State University", "Philippines"),
+    ("program", "Technical Programme Committee", "Tran Van Dai, Ph.D.", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Programme Committee", "Ho Van Hung, Ph.D.", "The University of DaNang – Center for Information Technology and Digital Learning Resources", "VietNam"),
+    ("program", "Technical Programme Committee", "Hoang Manh Ha, Ph.D.", "Institute of Digital Technology, Thu Dau Mot University", "VietNam"),
+    ("program", "Technical Programme Committee", "Adel Grace Prima Gaudicos, Ph.D.", "Southern Leyte State University", "Philippines"),
+    ("program", "Technical Programme Committee", "Tzung-Pei Hong, Prof. Dr.", "National University of Kaohsiung", "Taiwan"),
+    ("program", "Technical Programme Committee", "David Camacho, Prof. Dr.", "Universidad Autónoma de Madrid", "Spain"),
+    ("program", "Technical Programme Committee", "Nitesh Chawla, Prof. Dr.", "University of Notre Dame", "USA"),
+    ("program", "Technical Programme Committee", "Kang-Hyun Jo, Prof. Dr.", "University of Ulsan", "South Korea"),
+    ("program", "Technical Programme Committee", "Lipo Wang, Prof. Dr.", "Nanyang Technological University", "Singapore"),
+    ("program", "Technical Programme Committee", "Chia Nan Wang, Prof. Dr.", "National Kaohsiung University of Science and Technology", "Taiwan"),
+    ("program", "Technical Programme Committee", "Gwanggil Jeon, Prof. Dr.", "Incheon National University", "Korea"),
+    ("program", "Technical Programme Committee", "Herwig Unger, Prof. Dr.", "University of Hagen", "Germany"),
+    ("program", "Technical Programme Committee", "Ian Celmar Alicaya Avila, Ph.D.", "Western Leyte College of Ormoc", "Philippines"),
+    ("program", "Technical Programme Committee", "Rhoderick Darganttes Malangsa, Professor", "Southern Luzon State University (SLSU)", "Philippines"),
+    ("program", "Technical Programme Committee", "Thittaporn Ganokratanaa, Asst. Prof. Dr.", "King Mongkut's University of Technology Thonburi", "Thailand"),
+    ("program", "Technical Programme Committee", "Tran Hoang Vu, Ph.D.", "The University of Danang", "VietNam"),
+    ("program", "Technical Programme Committee", "Ly Quynh Tran, Ph.D.", "Vietnam-Korea University of Information and Communication Technology (VKU), The University of Danang", "VietNam"),
+    ("program", "Technical Programme Committee", "Ninh Khanh Duy, Ph.D.", "The University of Danang", "VietNam"),
     ("publication", "Publication Chair", "Jannie Fleur V. Oraño, DIT", "Southern Leyte State University", "Philippines"),
     ("publication", "Publicity & International Relations Chair", "Ingrid Uy", "Southern Leyte State University", "Philippines"),
     ("publication", "International Liaison Co-Chair", "Sonny Soriano", "Urdaneta City University", "Philippines"),
     ("publication", "Publicity Committee", "Ho Phan Hieu", "The University of Danang", "VietNam"),
     ("publication", "Publicity Committee", "Tran Thi Phu", "The University of Danang", "VietNam"),
-    ("publication", "Publication & International Relations Committee", "Thien Khai Tran, PhD", "Ho Chi Minh City University of Economics and Finance (UEF)", "VietNam"),
+    ("publication", "Publication & International Relations Committee", "Thien Khai Tran, Ph.D.", "Ho Chi Minh City University of Economics and Finance (UEF)", "VietNam"),
     ("organizing", "Local Organizing Committee", "Tran Nu Nhu Quynh", "Software Development Centre (SDC), The University of Danang", "VietNam"),
     ("organizing", "Local Organizing Committee", "Truong Luu Quan", "Software Development Centre (SDC), The University of Danang", "VietNam"),
+    ("organizing", "Local Organizing Committee", "Tran Anh Kiet, M.Sc.", "The University of Danang", "VietNam"),
 ]
 committee_category_labels = {
     "leadership": "Leadership",
