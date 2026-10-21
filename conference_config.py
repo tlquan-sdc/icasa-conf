@@ -30,6 +30,8 @@ CONFERENCE = {
     "site_url": "https://icasa-conf.org",
     "cmt_url": "",
     "publication": {
+        # Temporarily hidden until the proceedings partnership is reconfirmed.
+        "visible": False,
         "publisher": "Springer Nature",
         "series_short": "LNICST",
         "series_name": "Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
