@@ -132,8 +132,10 @@ CONFERENCE = {
     "partner_logos": [
         {"src": "assets/udn-logo.webp", "width": 640, "height": 640},
         {"src": "assets/sdc-logo.jpg", "width": 500, "height": 500},
-        {"src": "assets/cropped-SLSU_Logo-1.png", "width": 300, "height": 300},
+        {"src": "assets/Southern_Leyte_State_University.png", "width": 3349, "height": 3352},
         {"src": "assets/BiPSU.jpg", "width": 564, "height": 543},
+        {"src": "assets/logo Western Leyte College of Ormoc.png", "width": 600, "height": 300},
+        {"src": "assets/urdaneta city university.png", "width": 400, "height": 500},
     ],
     "last_updated": "20 Oct 2026",
     "registration_fees": {
