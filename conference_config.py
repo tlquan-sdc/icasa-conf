@@ -28,7 +28,7 @@ CONFERENCE = {
     "contact_email": "icasa.conf@sdc.udn.vn",
     "host_university": "The University of Danang",
     "site_url": "https://icasa-conf.org",
-    "cmt_url": "",
+    "cmt_url": "https://cmt3.research.microsoft.com/ICASA2027/",
     "publication": {
         # Temporarily hidden until the proceedings partnership is reconfirmed.
         "visible": False,
@@ -136,6 +136,7 @@ CONFERENCE = {
         {"src": "assets/BiPSU.jpg", "width": 564, "height": 543},
         {"src": "assets/logo Western Leyte College of Ormoc.png", "width": 600, "height": 300},
         {"src": "assets/urdaneta city university.png", "width": 400, "height": 500},
+        {"src": "assets/VSU Logo 2016-67f38a29.png", "width": 2444, "height": 2444},
     ],
     "last_updated": "20 Oct 2026",
     "registration_fees": {

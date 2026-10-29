@@ -251,7 +251,7 @@ def submission_guidelines():
         <li>Use the official conference manuscript template when it becomes available and submit the review manuscript as a PDF with all fonts embedded.</li>
         <li>Enter the title, abstract, author names, affiliations, email addresses and topics accurately in Microsoft CMT.</li>
       </ul>
-      <div class="notice-line">The review model, PDF file-size limit and supplementary-material policy will be published before the submission portal opens.</div>'''
+      <div class="notice-line">The review model, PDF file-size limit and supplementary-material policy will be published here when confirmed.</div>'''
 
 
 def submission_resources():
@@ -271,7 +271,7 @@ def paper_submission_details():
 {f'<h3>Templates and author resources</h3>{submission_resources()}' if SHOW_PUBLICATION else ''}
       <h3>Submission procedure</h3>
       <p>All full papers must be submitted through the official {SITE_NAME} Microsoft Conference Management Toolkit (CMT) portal. Do not submit through a CMT link belonging to another conference.</p>
-      <div class="submission-card"><div><span class="section-label">Official submission portal</span><h3>{SITE_NAME} on Microsoft CMT</h3><p>The conference-specific URL will be activated here after the ICASA workspace is approved.</p></div>{cmt_cta("Submit via Microsoft CMT")}</div>
+      <div class="submission-card"><div><span class="section-label">Official submission portal</span><h3>{SITE_NAME} on Microsoft CMT</h3><p>{'Submit your paper through the official conference-specific portal.' if CMT_URL else 'The conference-specific URL will be activated here after the ICASA workspace is approved.'}</p></div>{cmt_cta("Submit via Microsoft CMT")}</div>
       <h3>Submission process</h3>
       <ol class="attendee-steps submission-steps">
         <li><span>01</span><div><strong>Create or access your account</strong><p>Create a Microsoft CMT account or sign in with the email address you will use for conference correspondence.</p></div></li>
@@ -306,6 +306,7 @@ home = f'''
   <a class="identity-card" href="https://bipsu.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner university</span><span class="identity-logo bipsu"><img src="assets/BiPSU.jpg" alt="Biliran Province State University logo" width="564" height="543"></span><strong>Biliran Province State University</strong><small>BiPSU · Philippines</small></a>
   <a class="identity-card" href="https://wlcormoc.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner institution</span><span class="identity-logo wlc"><img src="assets/logo Western Leyte College of Ormoc.png" alt="Western Leyte College of Ormoc City logo" width="600" height="300"></span><strong>Western Leyte College of Ormoc City</strong><small>WLC · Philippines</small></a>
   <a class="identity-card" href="https://ucu.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner university</span><span class="identity-logo ucu"><img src="assets/urdaneta city university.png" alt="Urdaneta City University logo" width="400" height="500"></span><strong>Urdaneta City University</strong><small>UCU · Philippines</small></a>
+  <a class="identity-card" href="https://www.vsu.edu.ph/" target="_blank" rel="noopener noreferrer" data-reveal><span class="identity-kicker">Partner university</span><span class="identity-logo vsu"><img src="assets/VSU Logo 2016-67f38a29.png" alt="Visayas State University logo" width="2444" height="2444"></span><strong>Visayas State University</strong><small>VSU · Philippines</small></a>
 </div></div></section>
 <section class="sponsors-section" data-sponsors-section hidden><div class="container"><div class="sponsors-heading"><div><span class="section-label">Conference support</span><h2>Sponsors</h2></div><p>Confirmed sponsors and supporters will appear here after agreement and logo-use approval.</p></div><div class="sponsor-rail" data-sponsors></div></div></section>
 <section class="host-band"><div class="container host-grid" data-reveal><div><span class="section-label">Host city</span><strong>{CONFERENCE['city'].upper()}</strong></div><p>{CONFERENCE['region']}<br>{CONFERENCE['latitude']}° N · {CONFERENCE['longitude']}° E</p><div><span class="section-label">Organiser</span><p>{ORGANIZER}</p></div><a class="btn inverse" href="venue.html">Venue information <span>→</span></a></div></section>'''
@@ -344,6 +345,10 @@ committee_members = [
     ("program", "Technical Programme Committee", "Ninh Khanh Duy, Ph.D.", "The University of Danang", "VietNam"),
     ("program", "Technical Programme Committee", "Bui Thanh Khiet, Ph.D.", "Thu Dau Mot University", "VietNam"),
     ("program", "Technical Programme Committee", "Las Johansen B. Caluza, Prof., Ph.D., DIT", "Leyte Normal University", "Philippines"),
+    ("program", "Technical Programme Committee · Associate Professor · V Dean, Faculty of Computing", "DR. JUDE B. ROLA", "Visayas State University", "Philippines"),
+    ("program", "Technical Programme Committee · Dean, College of Information Communications Technology and Engineering", "Cheryl Montederamos Tarre", "Western Leyte College of Ormoc", "Philippines"),
+    ("program", "Technical Programme Committee", "PGS.TS Võ Trung Hùng", "Trường Đại học Sư phạm kỹ thuật, ĐHĐN", "VietNam"),
+    ("program", "Technical Programme Committee", "PGS.TS Nguyễn Thanh Bình", "Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn - VKU, Đại học Đà Nẵng", "VietNam"),
     ("publication", "Publication Chair", "Jannie Fleur V. Oraño, Ph.D.", "Southern Leyte State University", "Philippines"),
     ("publication", "Publicity & International Relations Chair", "Ingrid Uy, Ph.D.", "Southern Leyte State University", "Philippines"),
     ("publication", "International Liaison Co-Chair", "Sonny Soriano, Ph.D.", "Urdaneta City University", "Philippines"),
